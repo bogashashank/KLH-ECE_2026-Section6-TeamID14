@@ -195,6 +195,17 @@ The concepts demonstrated are relevant to:
 - Memory and storage integrity checks
 - Embedded and FPGA-based digital systems
 
+------
+
+
+| Test Case | Original Data | Transmitted | Received | ERROR | Status           |
+| --------- | ------------- | ----------- | -------- | ----: | ---------------- |
+| No Error  | 1010          | 1010011     | 1010011  |     0 | ✅ No Error       |
+| Bit Error | 1010          | 1010011     | 1010001  |     1 | ❌ Error Detected |
+| Bit Error | 1010          | 1010011     | 1000011  |     1 | ❌ Error Detected |
+| Bit Error | 1100          | 1100001     | 1101001  |     1 | ❌ Error Detected |
+
+
 ---
 
 ## GitHub Submission Checklist
